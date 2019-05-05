@@ -1,0 +1,85 @@
+//git commands are for terminal and you can verify if you did those changes on GitHub repository
+
+
+
+//If it is your first time
+
+git config --global user.name username //username on GitHub
+git config --global user.email email   //email registered with on GitHub
+
+//Create a folder that's the folder where you will be working on
+//Accept a collaborator invitation from admin/company ***email invitation
+
+//***on terminal change your directory to the folder you created make sure you are in it all the time***
+
+git init
+git clone URL   //copy url of repository
+
+//if you go to the folder you will see all the files from repository are in there
+//do modifications you want to do on your computer
+
+git branch yourBranchName //creating a branch for yourself
+git checkout yourBranchName //you switch the branch it is master branch by default
+git status                  //to see what files have to be staged and saved
+				//with red letters
+git add filename.extension //or as a shortcut you can use //git add -A// to add all files //this process called staging
+git commit -m "explanation //you are saving you changes
+git push -u origin yourBranchName //you are pushing to your branch and should be able to 
+				 //see changes on GitHub repo if you did everything right
+git status			//nothing to commit, working tree clean or green letters
+
+//Have to figure out pull request to do peer review before merging your changes to master 
+//branch assume pull request is done
+
+git branch      //see in which branch you are in
+git checkout master //switch to master branch
+git merge yourBranchName //merge/upload your changed to master branch
+
+//assume you are done for the day
+//next morning before starting to work
+
+git branch      //see what branch you are in the last one you was by default
+git checkout master //switch to master branch
+git fetch		
+git pull		//get the latest version fetch and pull go hand to hand
+
+
+//do your task inside your folder on comp 
+
+git branch
+git checkout yourBranchName
+git add filename.extension
+git commit -m "explanation"
+git push -u origin yourBranchName
+
+//Have to figure out pull request to do peer review before merging your changes to master 
+//branch assume pull request is done
+
+git branch
+git checkout master
+git merge yourBranchName
+
+
+
+////
+git commit --amend  //What do you do when there is conflict ... (while pushing code by several developers in the same time by several developers)//do some research on this//
+
+
+//If you merged sth and there is a conflict
+git merge --abort
+
+//If you resolved conflict and realized you have made a mistake after merging to undo it
+git reset --hard
+
+
+
+
+
+
+
+
+
+
+
+
+
